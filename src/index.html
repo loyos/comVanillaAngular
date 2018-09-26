@@ -9,6 +9,19 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+    <script>
+        window.jsonFlickrFeed = 1;
+     </script>
   <app-root></app-root>
+  <script>
+   window.angularToVanillaCallback = function() {
+  // communicate with other vanilla JS code
+  console.log("vanilla function");
+  return "sdfs";
+  }
+  setTimeout(function(){ window.vanillaToAngularCallback(); }, 3000);
+  
+   </script>
+
 </body>
 </html>
